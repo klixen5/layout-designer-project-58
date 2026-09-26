@@ -178,75 +178,41 @@ h5 {
   background-color: var(--color-dark-primary);
 }
 
-#ikea-effect {
-  position: relative;
-}
-
-#ikea-effect::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--color-light);
-  background-image: url("/images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-
-.ikea-effect-header {
+.effect-header {
   display: flex;
   flex-flow: column wrap;
   height: 434px;
+  margin-bottom: 100px;
 }
 
-.ikea-effect-content {
+.effect-columns {
   display: flex;
   flex-flow: row wrap;
   gap: 30px 20px;
 }
 
-.block-header {
+.effect-column {
+  width: 540px;
+}
+
+.effect-title {
   width: 100%;
   padding: 5px 10px;
   font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.effect-title-brown {
   color: var(--color-white);
   background-color: var(--color-brown);
 }
 
-#premature-optimization {
-  position: relative;
-}
-
-#premature-optimization::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--color-brown);
-  background-image: url("/images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-
-#distortion-of-novelty {
-  position: relative;
-}
-
-#distortion-of-novelty::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--color-light);
-  background-image: url("/images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-
-.d-inline-block {
-  display: inline-block;
+.effect-title-white {
+  color: var(--color-brown);
+  background-color: var(--color-white);
 }
 
 .w-502 {
@@ -255,10 +221,6 @@ h5 {
 
 .mb-185 {
   margin-bottom: 185px;
-}
-
-.mb-100 {
-  margin-bottom: 100px;
 }
 
 .mb-40 {
@@ -285,7 +247,7 @@ h5 {
   color: var(--color-primary);
 }
 
-.text-secondary {
+.text-secondary-dark {
   color: var(--color-dark-transparent);
 }
 
@@ -295,6 +257,10 @@ h5 {
 
 .text-white {
   color: var(--color-white);
+}
+
+.text-dark {
+  color: var(--color-dark);
 }
 
 .text-brown {
@@ -309,24 +275,12 @@ h5 {
   font-size: 24px;
 }
 
-.text-white {
-  color: var(--color-white);
-}
-
-.text-dark {
-  color: var(--color-dark);
-}
-
 .text-center {
   text-align: center;
 }
 
 .font-neucha {
   font-family: "Neucha";
-}
-
-.font-bold {
-  font-weight: bold;
 }
 
 .ln-12 {
