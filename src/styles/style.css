@@ -220,6 +220,21 @@ article.square {
   z-index: -1;
 }
 
+#distortion-of-novelty {
+  position: relative;
+}
+
+#distortion-of-novelty::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-light);
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
 .d-inline-block {
   display: inline-block;
 }
@@ -288,6 +303,10 @@ article.square {
   color: var(--color-white);
 }
 
+.text-dark {
+  color: var(--color-dark);
+}
+
 .text-center {
   text-align: center;
 }
@@ -306,6 +325,10 @@ article.square {
 
 .bg-white {
   background-color: var(--color-white);
+}
+
+.bg-brown {
+  background-color: var(--color-brown);
 }
 
 .drop-shadow {
