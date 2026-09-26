@@ -180,7 +180,6 @@ article.square {
   background-image: url("/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.9;
   z-index: -1;
 }
 
@@ -196,7 +195,7 @@ article.square {
   gap: 30px 20px;
 }
 
-.ikea-effect-content h5 {
+.block-header {
   width: 100%;
   padding: 5px 10px;
   font-family: "Open Sans";
@@ -204,6 +203,21 @@ article.square {
   text-transform: uppercase;
   color: var(--color-white);
   background-color: var(--color-brown);
+}
+
+#premature-optimization {
+  position: relative;
+}
+
+#premature-optimization::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-brown);
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 .d-inline-block {
@@ -250,6 +264,18 @@ article.square {
   color: var(--color-dark-transparent);
 }
 
+.text-secondary-light {
+  color: var(--color-white-transparent);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-brown {
+  color: var(--color-brown);
+}
+
 .text-34 {
   font-size: 34px;
 }
@@ -278,8 +304,13 @@ article.square {
   line-height: 1.2;
 }
 
+.bg-white {
+  background-color: var(--color-white);
+}
+
 .drop-shadow {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
+
 
 
