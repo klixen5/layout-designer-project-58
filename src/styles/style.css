@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("/fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
@@ -81,17 +81,6 @@ h5 {
   font-size: 14px;
 }
 
-.box {
-  position: relative;
-  width: 1110px;
-  padding-block: 100px;
-  margin-inline: auto;
-}
-
-.header {
-  position: relative;
-}
-
 .header-image {
   position: absolute;
   top: 55px;
@@ -99,31 +88,43 @@ h5 {
   height: 525px;
 }
 
-.header::before {
+.header-container {
+  display: flex;
+  gap: 30px;
+}
+
+.header-column {
+  width: 540px;
+}
+
+.box {
+  position: relative;
+  width: 1110px;
+  padding-block: 100px;
+  margin-inline: auto;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper::before {
   content: "";
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-light);
   background-image: url("/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.9;
-}
-
-.container {
-  display: flex;
-  gap: 30px;
-}
-
-.column {
-  width: 540px;
 }
 
 .btn {
   display: inline-block;
   padding: 12px 24px;
+}
+
+.btn-primary {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -323,8 +324,8 @@ article.square {
   line-height: 1.2;
 }
 
-.bg-white {
-  background-color: var(--color-white);
+.bg-light {
+  background-color: var(--color-light);
 }
 
 .bg-brown {
