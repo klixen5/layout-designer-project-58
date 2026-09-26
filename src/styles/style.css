@@ -97,6 +97,52 @@ h5 {
   width: 540px;
 }
 
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+}
+
+.btn-primary {
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.navigation-cards {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+
+.card {
+  width: 350px;
+  flex: 0 0 350px;
+  padding: 24px;
+}
+
+.card-header {
+  padding: 0;
+}
+
+.card-transparent {
+  background-color: transparent;
+}
+
+.card-light {
+  background-color: var(--color-light);
+}
+
+.card-number {
+  font-family: 'Neucha', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 1;
+}
+
 .box {
   position: relative;
   width: 1110px;
@@ -117,56 +163,19 @@ h5 {
   background-image: url("/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-}
-
-.btn-primary {
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  color: var(--color-white);
-  background-color: var(--color-primary);
-}
-
-#navigation {
-  position: relative;
-}
-
-#navigation::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--color-dark-primary);
   z-index: -1;
 }
 
-.squares-box {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 30px;
+.wrapper-no-bg::before {
+  background-image: none;
 }
 
-.square {
-  width: 350px;
-  flex: 0 0 350px;
-}
-
-article.square {
-  padding: 24px;
+.wrapper-light::before {
   background-color: var(--color-light);
 }
 
-.square-number {
-  font-family: 'Neucha', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 64px;
-  line-height: 1;
+.wrapper-dark-primary::before {
+  background-color: var(--color-dark-primary);
 }
 
 #ikea-effect {
@@ -330,6 +339,10 @@ article.square {
 
 .bg-brown {
   background-color: var(--color-brown);
+}
+
+.bg-dark-primary {
+  background-color: var(--color-dark-primary);
 }
 
 .drop-shadow {
