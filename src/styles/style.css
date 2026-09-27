@@ -178,6 +178,10 @@ h5 {
   background-color: var(--color-dark-primary);
 }
 
+.wrapper-brown::before {
+  background-color: var(--color-brown);
+}
+
 .effect-header {
   display: flex;
   flex-flow: column wrap;
@@ -285,6 +289,10 @@ h5 {
 
 .ln-12 {
   line-height: 1.2;
+}
+
+.bg-white {
+  background-color: var(--color-white);
 }
 
 .bg-light {
