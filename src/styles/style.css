@@ -142,6 +142,68 @@ h5 {
   line-height: 1;
 }
 
+.footer-form {
+  position: relative;
+  padding: 55px;
+  margin-bottom: 60px;
+  color: white;
+  background-color: var(--color-dark-primary);
+}
+
+.user-form {
+  position: absolute;
+  top: 38px;
+  right: 55px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 490px;
+}
+
+.user-email {
+  height: 50px;
+  width: 420px;
+  padding: 15px;
+}
+
+.user-email::placeholder {
+  font-size: 13px;
+  color: #757575;
+}
+
+.label-user-email {
+  width: 100%;
+  font-size: 18px;
+}
+
+.submit-email-button {
+  position: relative;
+  height: 50px;
+  width: 70px;
+  background-color: var(--color-primary);
+}
+
+.submit-email-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 24px;
+  width: 24px;
+  background-image: url("/icons/send.svg");
+}
+
+.form-under {
+  font-size: 12px;
+}
+
+.address {
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  color: black;
+}
+
 .box {
   position: relative;
   width: 1110px;
